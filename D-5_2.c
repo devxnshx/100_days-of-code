@@ -13,3 +13,16 @@ Output 2:
 2:2:2
 
 */
+
+#include <stdio.h>
+
+int main() {
+    int t_s,h,m,s;
+    printf("Enter time in seconds :");
+    scanf("%d",&t_s);
+
+     h=(t_s/3600), m=(t_s%3600)/60, s=((t_s%3600)%60)/*s=t_s%60*/;
+
+    printf("%d:%d:%d",h,m,s);
+     return 0;
+}
