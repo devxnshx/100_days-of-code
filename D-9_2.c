@@ -50,6 +50,6 @@ int main() {
     {
         printf("Grade F");
     }
-    
+  
      return 0;
 }
