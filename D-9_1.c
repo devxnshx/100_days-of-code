@@ -36,7 +36,7 @@ int main() {
         
         if (D>0)
         {
-            printf("Roots are real and different : %d %d",r1,r2);
+            printf("Roots are real and different : %d, %d",r1,r2);
         }
        else if (D==0)
         {
