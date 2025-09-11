@@ -13,20 +13,18 @@ Output 2:
 48 (2 * 4 * 6)
 
 */
+
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    int n =0,sum=0;
+    printf("enter any num: ");
+    scanf("%d",&n);
 
-    int product = 1;
-
-    for (int i = 2; i <= n; i += 2) 
-    {   
-        product *= i;
-    }
-
-    printf("%d", product);
-
-    return 0;
+for (int i = 0; i <=n; i+=2)
+{
+    sum+=i;
+}
+printf("the sum of first n odd numbers is %d",sum);
+     return 0;
 }

@@ -16,16 +16,15 @@ Output 2:
 #include <stdio.h>
 
 int main() {
-    int n, rev = 0;
-    scanf("%d", &n);
-
-    while (n > 0) {
-        int digit = n % 10;   
-        rev = rev * 10 + digit;  
-        n = n / 10;              
+    int n=0,new_num=0;
+    printf("enter any number: ");
+    scanf("%d",&n);
+    while (n>0)
+    {
+        new_num=new_num*10 + n%10;
+        n=n/10;
     }
+    printf("new_num: %d",new_num);
 
-    printf("%d", rev);
-
-    return 0;
+     return 0;
 }

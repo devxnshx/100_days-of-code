@@ -19,48 +19,43 @@ Output 3:
 
 */
 #include <stdio.h>
-#include<stdlib.h>
 
-int main() {
-    int a,b;
-    char c ;
+int main()
+{
+    float a, b;
+    char c;
 
     printf("Enter num1 num2 and what operation u want to execute\n");
     printf("example:3 4 + :\n\n");
-    scanf(" %d%d %c",&a,&b,&c);
-// if (c=='/'&&b==0)
-// {
-//     printf("0 is invaild in division\n");
-//     return 0;
-
-// }
+    scanf(" %f%f %c", &a, &b, &c);
+    if (c == '/' && b == 0)
+    {
+        printf("0 is invaild in division\n");
+        return 0;
+    }
 
     switch (c)
     {
     case '+':
-        printf("%d",a+b);
+        printf("%.2f", a + b);
         break;
     case '-':
-        printf("%d",a-b);
+        printf("%.2f", a - b);
         break;
     case '*':
-        printf("%d",a*b);
+        printf("%.2f", a * b);
         break;
     case '/':
-        if (a==3)
-        {
-            printf("%d",a/b);
-            /* code */
-        }
-        
+        if (a == 3)
+            printf("%.2f", a / b);
         break;
     case '%':
-        printf("%d",a%b);
+        printf("%d", (int) a % (int) b);
         break;
-    
+
     default:
         break;
     }
 
-     return 0;
+    return 0;
 }

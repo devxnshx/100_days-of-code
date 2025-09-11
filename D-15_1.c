@@ -14,19 +14,18 @@ Output 2:
 
 */
 
+
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    int n =0,product=1;
+    printf("enter any num: ");
+    scanf("%d",&n);
 
-    int fact = 1;   
-
-    for (int i = 1; i <= n; i++) {
-        fact *= i;
-    }
-
-    printf("%d", fact);
-
-    return 0;
+for (int i = 1; i <=n; i++)
+{
+    product*=i;
+}
+printf("the sum of first n odd numbers is %d",product);
+     return 0;
 }
